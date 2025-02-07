@@ -18,7 +18,8 @@ body {
 
 /* Header */
 header {
-    width: 100%;
+    width: 100%;/*
+    background-color: #64a002;*/
     color: white;
     text-align: center;
 }
@@ -27,14 +28,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 1em;
     padding: 5px 20px;
     background-color: #64a002;
 }
 
 .top-bar img {
-    width: 24px;
-    margin-left: 8px;
+  max-width: 100%;
+  height: auto;
 }
 
 .top-bar div{
@@ -148,11 +149,11 @@ span{
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
+  font-size: 1em;
 }
 .option img {
-  width: 24px;
-  height: 24px;
+  max-width: 100%;
+  height: auto;
 }
 .option.active {
   border-color: #f75d5d;
@@ -170,7 +171,7 @@ span{
   flex-direction: column;
 }
 .input-group label {
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 600;
   margin-bottom: 8px;
 }
@@ -178,13 +179,13 @@ span{
   padding: 12px;
   border: 1px solid #e4e4e4;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 1em;
 }
 .submit-btn {
   padding: 12px 24px;
   background-color: #f75d5d;
   color: white;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 600;
   border: none;
   border-radius: 8px;
@@ -267,7 +268,7 @@ span{
   padding: 10px;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .search-button {
@@ -298,7 +299,7 @@ span{
 .services-header p {
   width: 100%;
   position: relative;
-  font-size: 14px;
+  font-size: 1em;
   font-family: Poppins;
   color: #282733;
   text-align: center;
@@ -310,15 +311,17 @@ span{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
   
 .service-card {
   padding: 16px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease; box-shadow: 0.3s ease;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease; box-shadow: 0.3s ease;
 }
   
 .service-card:hover {
@@ -350,6 +353,7 @@ span{
 
 /* FAQ */
 .section-03{
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,8 +363,8 @@ span{
 }
 
 .image img {
-  width: 582px;
-  height: 513px;
+  max-width: 100%;
+  height: auto;
   border-radius: 14px;
 }
 .content {
@@ -376,7 +380,7 @@ span{
   color: #040405;
 }
 .subtitle {
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 400;
   color: #282733;
 }
@@ -399,7 +403,7 @@ span{
   background: white;
   padding: 16px;
   display: none;
-  font-size: 14px;
+  font-size: 1em;
 }
 .accordion.active .accordion-content {
   display: block;
@@ -413,7 +417,8 @@ span{
 }
   
 .faq-image img {
-      max-width: 100%;
+    max-width: 100%;
+    height: auto;
     }
 }
 
@@ -421,6 +426,10 @@ span{
 .signup {
     padding: 50px 20px;
     text-align: center;
+}
+
+.signup h2{
+  color: #67B13D;
 }
 
 form {
@@ -485,7 +494,7 @@ form button {
   }
   
   .cta-text p {
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 400;
   }
   
@@ -500,7 +509,7 @@ form button {
     width: 100%;
     flex: 1;
     padding: 12px 16px;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 400;
     color: #333;
     border: none;
@@ -519,7 +528,7 @@ form button {
   
   .cta-button {
     padding: 12px 24px;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 600;
     color: #fff;
     background-color: #FE5668; /* Vermelho */
@@ -591,27 +600,28 @@ form button {
   }
   
   .footer-logo p {
-    font-size: 14px;
+    font-size: 1em;
     color: #333;
     margin: 8px 0;
   }
   
   .social-media {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 8px;
     margin-top: 12px;
   }
   
   .social-media p {
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 600;
     color: #333;
   }
   
   .social-media a img {
-    width: 24px;
-    height: 24px;
+    max-width: 100%;
+    height: auto;
   }
   
   .footer-links {
@@ -634,7 +644,7 @@ form button {
   }
   
   .footer-links ul li a {
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 400;
     color: #333;
     text-decoration: none;
@@ -652,7 +662,7 @@ form button {
     color: #fff;
     border: none;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -668,7 +678,7 @@ form button {
     text-align: center;
     padding: 16px;
     color: #fff;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 400;
   }
   
@@ -685,6 +695,9 @@ form button {
     }
   
     .cta-button {
+      width: 100%;
+    }
+    .home-intro-banner {
       width: 100%;
     }
   }
@@ -798,5 +811,8 @@ form button {
 
   .footer-bottom {
     font-size: 12px;
+  }
+  .home-intro-banner {
+    width: 100%;
   }
 }
