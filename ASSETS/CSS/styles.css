@@ -16,6 +16,13 @@ body {
   min-height: 100vh;
 }
 
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /* Header */
 header {
     width: 100%;/*
@@ -52,6 +59,7 @@ nav {
     background: white;
     padding: 15px 20px;
     border-bottom: 2px solid #f0eef6;
+    font-size: 1em;
 }
 
 nav .logo {
@@ -195,7 +203,6 @@ span{
 .submit-btn:hover {
   background-color: #e04c4c;
 }
-/* Fim Novo form */
 
 /* Formulário */
 .pet-form {
@@ -238,22 +245,6 @@ span{
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.hosp-icon {
-  background-image: url('https://via.placeholder.com/40');
-}
-
-.creche-icon {
-  background-image: url('https://via.placeholder.com/40');
-}
-
-.petsitter-icon {
-  background-image: url('https://via.placeholder.com/40');
-}
-
-.passeio-icon {
-  background-image: url('https://via.placeholder.com/40');
 }
 
 .inputs {
@@ -353,17 +344,17 @@ span{
 
 /* FAQ */
 .section-03{
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 24px 16px;
+  padding: 0 24px 0 0;
   background: #FAFFF2;
+  border-radius: 14px;
 }
 
 .image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 14px;
 }
@@ -742,6 +733,8 @@ form button {
     flex-direction: column;
     gap: 16px;
   }
+  
+  
 }
 
 /* Smartphones */
@@ -786,12 +779,40 @@ form button {
     flex-direction: column;
     gap: 16px;
   }
+
+  .section-03{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image img{
+    width: 80%;
+  }
 }
 
 /* Smartphones Pequenos */
-@media (max-width: 480px) {
+@media (max-width: 360px) {
+
+  .top-bar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 13px;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  nav{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
   .form-container {
-    padding: 12px;
+    padding: 20px;
   }
 
   .submit-btn {
@@ -804,6 +825,14 @@ form button {
     padding: 10px 16px;
   }
 
+  .services-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
   .footer-container {
     text-align: center;
     gap: 12px;
@@ -812,7 +841,5 @@ form button {
   .footer-bottom {
     font-size: 12px;
   }
-  .home-intro-banner {
-    width: 100%;
-  }
+
 }
