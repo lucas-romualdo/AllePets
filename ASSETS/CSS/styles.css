@@ -1,25 +1,25 @@
-/* Reset geral */
+/* Reset Geral */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  color: #333;
+  min-height: 100vh;
 }
 
-/* Cabeçalho */
+/* Header */
 header {
     width: 100%;
-    background-color: #64a002;
     color: white;
-    padding: 10px 20px;
     text-align: center;
 }
 
@@ -29,11 +29,18 @@ header {
     align-items: center;
     font-size: 14px;
     padding: 5px 20px;
+    background-color: #64a002;
 }
 
 .top-bar img {
     width: 24px;
     margin-left: 8px;
+}
+
+.top-bar div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 /* Navegação */
@@ -79,6 +86,7 @@ nav ul li a {
 .hero {
     text-align: center;
     padding: 50px 20px;
+    justify-content: center;
 }
 
 .hero img {
@@ -97,9 +105,98 @@ span{
     background: #64A002;
     color: #fff;
 }
+.home-intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Novo form */
+.form-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 960px;
+  padding: 40px;
+}
+.form-header {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-header span {
+  background: #48a048;
+  font-weight: 700;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.option {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.option img {
+  width: 24px;
+  height: 24px;
+}
+.option.active {
+  border-color: #f75d5d;
+  background-color: #fff5f5;
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.input-group select, .input-group input {
+  padding: 12px;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.submit-btn {
+  padding: 12px 24px;
+  background-color: #f75d5d;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.submit-btn:hover {
+  background-color: #e04c4c;
+}
+/* Fim Novo form */
 
 /* Formulário */
-
 .pet-form {
   display: flex;
   flex-direction: column;
@@ -216,6 +313,7 @@ span{
 }
   
 .service-card {
+  padding: 16px;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -229,7 +327,7 @@ span{
 }
   
 .service-image {
-    width: 100%;
+    width: auto;
     height: auto;
 }
   
@@ -237,6 +335,8 @@ span{
     padding: 10px;
     background: #f7f8fa;
     text-align: center;
+    width: auto;
+    height: auto;
 }
   
 .service-info h3 {
@@ -248,108 +348,63 @@ span{
     margin: 0;
 }
 
-/* Seção Saiba Mais */
-.faq-section {
-    background: #FAFFF2;
-    border-radius: 16px;
-    padding: 20px;
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.faq-container {
-    display: flex;
-    gap: 24px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-  
-.faq-image img {
-    border-radius: 8px;
-    max-width: 100%;
-    height: auto;
-}
-  
-.faq-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24px;
-    max-width: 558px;
-    flex: 1;
+/* FAQ */
+.section-03{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24px 16px;
+  background: #FAFFF2;
 }
 
+.image img {
+  width: 582px;
+  height: 513px;
+  border-radius: 14px;
+}
+.content {
+  width: 558px;
+  padding: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #040405;
+}
+.subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #282733;
+}
+.accordion {
+  border: 1px solid #D7D3E1;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.accordion-header {
+  background: white;
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-content {
+  background: white;
+  padding: 16px;
+  display: none;
+  font-size: 14px;
+}
+.accordion.active .accordion-content {
+  display: block;
+}
 
-.faq-header h2 {
-    font-size: 32px;
-    font-weight: 600;
-    color: #040405;
-}
-  
-.faq-header p {
-    font-size: 14px;
-    font-weight: 400;
-    color: #040405;
-}
-  
-.faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-  
-.faq-item {
-    border: 1px solid #D7D3E1;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-  
-.faq-question {
-    width: 100%;
-    padding: 16px 24px;
-    background: transparent;
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 600;
-    color: #040405;
-    cursor: pointer;
-}
-  
-.faq-icon {
-    font-size: 14px;
-    color: #FE5668;
-    transition: transform 0.3s ease;
-}
-  
-.faq-question[aria-expanded="true"] .faq-icon {
-    transform: rotate(180deg);
-}
-  
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-    padding: 0 24px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #282733;
-    align-content: stretch;
-}
-  
-.faq-item[aria-expanded="true"] .faq-answer {
-    max-height: 300px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-  
 /* Responsividade */
 @media (max-width: 768px) {
     .faq-container {
@@ -514,7 +569,7 @@ form button {
 .footer {
     width: 100%;
     background-color: #FAFFF2;
-    padding: 20px 8px;
+    padding-TOP: 20px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -608,6 +663,7 @@ form button {
   }
   
   .footer-bottom {
+    width: 100%;
     background-color: #67B13D;
     text-align: center;
     padding: 16px;
@@ -632,26 +688,115 @@ form button {
       width: 100%;
     }
   }
+
 /* Responsividade */
+
+/* Desktop Médio */
+@media (max-width: 1200px) {
+  nav ul {
+    gap: 16px;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .form-container {
+    padding: 20px;
+    max-width: 720px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .cta-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-form {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Smartphones */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
 
-    .service-list {
-        flex-direction: column;
-        align-items: center;
-    }
+  .form-container {
+    padding: 16px;
+    max-width: 480px;
+  }
 
-    .footer-content {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
+  .options {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .inputs {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-form {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Smartphones Pequenos */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 12px;
+  }
+
+  .submit-btn {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .cta-button {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  .footer-container {
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
 }
