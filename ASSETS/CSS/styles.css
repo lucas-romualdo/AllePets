@@ -672,6 +672,82 @@ form button {
     font-size: 1em;
     font-weight: 400;
   }
+
+/*Page Tutor*/
+.tutor-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f7ea; /* Cor de fundo suave */
+  background-image: url("../IMG/logo-fundo.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 20px 40px;
+  border-radius: 8px;
+  margin: auto;
+}
+
+/* Texto */
+.tutor-content {
+  max-width: 40%;
+}
+
+.tutor-title {
+  background-color: #62b322; /* Verde destacado */
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}''
+
+.tutor-content p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Imagem */
+.tutor-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*section-02-tutor*/
+.section-02-tutor {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.section-02-tutor h2 {
+  color: #62b322; /* Verde */
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Parágrafos */
+.section-02-tutor p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Linha separadora */
+.separator {
+  width: 40px;
+  height: 3px;
+  background-color: #e91e63; /* Rosa */
+  margin: 10px auto;
+}
   
   /* Responsividade */
   @media (max-width: 768px) {
@@ -691,7 +767,7 @@ form button {
     .home-intro-banner {
       width: 100%;
     }
-  }
+  } 
 
 /* Responsividade */
 
@@ -734,8 +810,8 @@ form button {
     gap: 16px;
   }
   
-  
 }
+
 
 /* Smartphones */
 @media (max-width: 768px) {
