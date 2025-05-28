@@ -9,7 +9,7 @@
 body {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   background-color: #fff;
   color: #333;
@@ -25,8 +25,8 @@ main {
 
 /* Header */
 header {
-  width: 100%; /*
-    background-color: #64a002;*/
+  width: 100%;
+  /*background-color: #64a002;*/
   color: white;
   text-align: center;
 }
@@ -114,6 +114,7 @@ span {
   background: #64a002;
   color: #fff;
 }
+
 .home-intro {
   display: flex;
   justify-content: center;
@@ -130,22 +131,26 @@ span {
   max-width: 960px;
   padding: 40px;
 }
+
 .form-header {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 20px;
 }
+
 .form-header span {
   background: #48a048;
   font-weight: 700;
 }
+
 .options {
   display: flex;
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 16px;
 }
+
 .option {
   flex: 1;
   padding: 12px;
@@ -159,30 +164,36 @@ span {
   gap: 8px;
   font-size: 1em;
 }
+
 .option img {
   max-width: 100%;
   height: auto;
 }
+
 .option.active {
   border-color: #f75d5d;
   background-color: #fff5f5;
 }
+
 .inputs {
   display: flex;
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 16px;
 }
+
 .input-group {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+
 .input-group label {
   font-size: 1em;
   font-weight: 600;
   margin-bottom: 8px;
 }
+
 .input-group select,
 .input-group input {
   padding: 12px;
@@ -190,6 +201,7 @@ span {
   border-radius: 8px;
   font-size: 1em;
 }
+
 .submit-btn {
   padding: 12px 24px;
   background-color: #f75d5d;
@@ -201,6 +213,7 @@ span {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 .submit-btn:hover {
   background-color: #e04c4c;
 }
@@ -360,6 +373,7 @@ span {
   height: auto;
   border-radius: 14px;
 }
+
 .content {
   width: 558px;
   padding: 56px;
@@ -367,22 +381,26 @@ span {
   flex-direction: column;
   gap: 24px;
 }
+
 .title {
   font-size: 32px;
   font-weight: 600;
   color: #040405;
 }
+
 .subtitle {
   font-size: 1em;
   font-weight: 400;
   color: #282733;
 }
+
 .accordion {
   border: 1px solid #d7d3e1;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 10px;
 }
+
 .accordion-header {
   background: white;
   padding: 16px;
@@ -392,27 +410,16 @@ span {
   justify-content: space-between;
   align-items: center;
 }
+
 .accordion-content {
   background: white;
   padding: 16px;
   display: none;
   font-size: 1em;
 }
+
 .accordion.active .accordion-content {
   display: block;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .faq-container {
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .faq-image img {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
 /* Formulário */
@@ -454,9 +461,9 @@ form button {
 }
 
 /* Newslatter */
-
 .cta-section {
-  background-color: #67b13d; /* Verde */
+  background-color: #67b13d;
+  /* Verde */
   padding: 20px 32px;
   border-radius: 16px;
   width: 100%;
@@ -524,7 +531,8 @@ form button {
   font-size: 1em;
   font-weight: 600;
   color: #fff;
-  background-color: #fe5668; /* Vermelho */
+  background-color: #fe5668;
+  /* Vermelho */
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -533,38 +541,6 @@ form button {
 
 .cta-button:hover {
   background-color: #e65475;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .cta-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .cta-form {
-    width: 100%;
-  }
-
-  .cta-input {
-    width: 100%;
-  }
-
-  .cta-button {
-    width: 100%;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
 }
 
 /* Rodapé */
@@ -675,12 +651,55 @@ form button {
   font-weight: 400;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+  .cta-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cta-form {
+    width: 100%;
+  }
+
+  .cta-input {
+    width: 100%;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+  .faq-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .faq-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
 /*Page Tutor*/
 .tutor-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f5f7ea; /* Cor de fundo suave */
+  background-color: #f5f7ea;
+  /* Cor de fundo suave */
   background-image: url("../IMG/logo-fundo.png");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -695,7 +714,8 @@ form button {
 }
 
 .tutor-title {
-  background-color: #62b322; /* Verde destacado */
+  background-color: #62b322;
+  /* Verde destacado */
   color: white;
   font-size: 22px;
   font-weight: bold;
@@ -703,6 +723,7 @@ form button {
   border-radius: 5px;
   display: inline-block;
 }
+
 "" .tutor-content p {
   margin-top: 10px;
   font-size: 18px;
@@ -728,7 +749,8 @@ form button {
 
 /* Título */
 .section-02-tutor h2 {
-  color: #62b322; /* Verde */
+  color: #62b322;
+  /* Verde */
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 15px;
@@ -747,7 +769,8 @@ form button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f5f7ea; /* Cor de fundo suave */
+  background-color: #f5f7ea;
+  /* Cor de fundo suave */
   background-image: url("../IMG/logo-fundo.png");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -763,7 +786,8 @@ form button {
 }
 
 .title-anfitriao {
-  background-color: #62b322; /* Verde destacado */
+  background-color: #62b322;
+  /* Verde destacado */
   color: white;
   font-size: 22px;
   font-weight: bold;
@@ -796,7 +820,8 @@ form button {
 
 /* Título */
 .section-02-anfitriao h2 {
-  color: #62b322; /* Verde */
+  color: #62b322;
+  /* Verde */
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 15px;
@@ -812,113 +837,115 @@ form button {
 
 /* Container principal */
 .register-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 50px auto;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 50px auto;
+  gap: 20px;
 }
 
 /* Estilização do formulário */
 .register-form {
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
 }
 
 .register-form h2 {
-    color: #62b322;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  color: #62b322;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .register-form p {
-    color: #333;
-    font-size: 16px;
-    margin-bottom: 20px;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    font-weight: bold;
-    margin-top: 10px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .form-group {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .form-group div {
-    flex: 1;
+  flex: 1;
 }
 
 /* Checkboxes */
-.terms, .privacy {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    margin-top: 10px;
+.terms,
+.privacy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-.terms input, .privacy input {
-    width: 16px;
-    height: 16px;
+.terms input,
+.privacy input {
+  width: 16px;
+  height: 16px;
 }
 
-.terms a, .privacy a {
-    color: #e91e63;
-    text-decoration: none;
+.terms a,
+.privacy a {
+  color: #e91e63;
+  text-decoration: none;
 }
 
 /* Botão */
 button {
-    background-color: #e91e63;
-    color: white;
-    border: none;
-    padding: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 15px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
 }
 
 /* Estilização do box de contato */
 .register-info {
-    flex: 1;
+  flex: 1;
 
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
 }
 
 .register-info img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .register-info p {
-    color: #333;
-    font-size: 16px;
-    margin-bottom: 8px;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
-
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -935,6 +962,7 @@ button {
   .cta-button {
     width: 100%;
   }
+
   .home-intro-banner {
     width: 100%;
   }
@@ -943,20 +971,19 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
+  }
 
-.register-form, .register-info {
+  .register-form,
+  .register-info {
     width: 100%;
-}
+  }
 
-.form-group {
+  .form-group {
     flex-direction: column;
-}
-}
+  }
 }
 
 /* Responsividade */
-
 /* Desktop Médio */
 @media (max-width: 1200px) {
   nav ul {
