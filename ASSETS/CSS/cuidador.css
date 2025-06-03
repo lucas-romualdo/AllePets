@@ -111,12 +111,12 @@
   }
 
   .div1 {
-    grid-area: 1 ;
+    grid-area: 1;
     width: 750px;
   }
 
   .div2 {
-    grid-area: 1 ;
+    grid-area: 1;
     width: 316px;
   }
 
@@ -138,6 +138,13 @@
     margin-bottom: 20px;
     text-decoration: none;
   }
+  .line{
+  width: 1140px;
+  height: 1px;
+  background: #d7d3e1;
+  margin-bottom: 20px;
+}
+ 
 
   /* Header do perfil */
   .perfil-header {
@@ -148,8 +155,14 @@
 
   .perfil-info {
     display: flex;
-    gap: 20px;
+    width: 750px;
+    padding: 16px 32px;
+    align-self: stretch;
     align-items: center;
+    gap: 20px;
+    border: 1px solid #D7D3E1;
+    border-radius: 16px;
+    justify-content: space-between;
   }
 
   .avatar {
@@ -162,19 +175,21 @@
   .nome-avaliacoes h1 {
     font-size: 20px;
     margin-bottom: 5px;
+    color: #000;
   }
 
   .nome-avaliacoes p {
     font-size: 14px;
     color: #777;
+    text-align: left;
   }
 
-  .nome-avaliacoes .estrelas {
+  .estrelas {
     color: #FFD700;
     font-size: 16px;
   }
 
-  .nome-avaliacoes small {
+  .estrelas small {
     color: #555;
   }
 
@@ -193,6 +208,7 @@
 
   .miniaturas {
     display: flex;
+    justify-content: center;
     gap: 10px;
   }
 
@@ -220,49 +236,34 @@
   }
 
   .sobre p {
-    font-size: 15px;
-    color: #444;
+    font-size: 16px;
+    color: #8D8B9C;
   }
 
   /* Avaliações */
-  .avaliacoes h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
+   .avaliacao {
+    border: 1px solid #D7D3E1;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px 0 20px 0;
   }
-
-  .avaliacao {
-    background: #f7f7f7;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 15px;
+  .avaliacoesAvaliacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: stretch;
+    align-items: center;
+    margin-bottom: 16px;
   }
-
-  .avaliacao h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-
-  .tipo-servico {
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 5px;
-  }
-
-  .avaliacao .estrelas {
-    color: #FFD700;
+  .avaliacoesAvaliacao small {
+    color: #8D8B9C;
     font-size: 14px;
+    font-weight: 400;
   }
-
-  .avaliacao small {
-    display: block;
-    color: #888;
-    margin-bottom: 10px;
-    font-size: 13px;
-  }
-
-  .avaliacao p {
-    font-size: 14px;
-    color: #555;
+  .avaliacaoNome {
+    width: 400px;
   }
 
   .ver-todas {

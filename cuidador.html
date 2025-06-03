@@ -1,338 +1,439 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviços AllePets</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Serviços AllePets</title>
+    <!-- Meta Tags Essenciais -->
+    <meta
+      name="description"
+      content="A AllePets conecta tutores a anfitriões de confiança para hospedagem, creche, pet sitter e passeios. Cadastre-se gratuitamente!"
+    />
+    <meta
+      name="keywords"
+      content="hospedagem pet, creche para cachorro, petsitter, passeio com cachorro, cuidados para pets"
+    />
+    <meta
+      name="author"
+      content="Desenvolvido pela Noexcuse | Web Designer José Lucas Romualdo Dias "
+    />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Meta Tags Essenciais -->
-  <meta name="description"
-    content="A AllePets conecta tutores a anfitriões de confiança para hospedagem, creche, pet sitter e passeios. Cadastre-se gratuitamente!" />
-  <meta name="keywords"
-    content="hospedagem pet, creche para cachorro, petsitter, passeio com cachorro, cuidados para pets" />
-  <meta name="author" content="Desenvolvido pela Noexcuse | Web Designer José Lucas Romualdo Dias " />
-  <meta name="robots" content="index, follow" />
+    <!-- Open Graph para Redes Sociais -->
+    <meta
+      property="og:title"
+      content="AllePets - Hospedagem e Cuidados para Pets"
+    />
+    <meta
+      property="og:description"
+      content="Encontre o melhor serviço de hospedagem, creche, pet sitter e passeios para seu pet. Conectamos você aos melhores anfitriões!"
+    />
+    <meta property="og:image" content="./assets/img/banner-section-01.png" />
+    <meta property="og:url" content="https://www.allepets.com.br" />
+    <meta property="og:type" content="website" />
 
-  <!-- Open Graph para Redes Sociais -->
-  <meta property="og:title" content="AllePets - Hospedagem e Cuidados para Pets" />
-  <meta property="og:description"
-    content="Encontre o melhor serviço de hospedagem, creche, pet sitter e passeios para seu pet. Conectamos você aos melhores anfitriões!" />
-  <meta property="og:image" content="./assets/img/banner-section-01.png" />
-  <meta property="og:url" content="https://www.allepets.com.br" />
-  <meta property="og:type" content="website" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="AllePets - Hospedagem e Cuidados para Pets"
+    />
+    <meta
+      name="twitter:description"
+      content="A AllePets conecta tutores a anfitriões de confiança para hospedagem, creche, pet sitter e passeios. Cadastre-se gratuitamente!"
+    />
+    <meta name="twitter:image" content="./assets/img/banner-section-01.png" />
 
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AllePets - Hospedagem e Cuidados para Pets" />
-  <meta name="twitter:description"
-    content="A AllePets conecta tutores a anfitriões de confiança para hospedagem, creche, pet sitter e passeios. Cadastre-se gratuitamente!" />
-  <meta name="twitter:image" content="./assets/img/banner-section-01.png" />
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/cuidador.css" />
+  </head>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="./assets/css/cuidador.css" />
-</head>
-
-<body>
-  <!-- Header -->
-  <header>
-    <div class="top-bar">
-      <div>
-        <img src="./ASSETS/SVG/clock.svg" alt="Faça sua reserva 24h por dia" />
-        <p>Faça sua reserva 24h por dia!</p>
-      </div>
-
-      <div>
-        <p>Siga-nos:</p>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="top-bar">
         <div>
-          <img src="./assets/svg/facebook.svg" alt="Facebook" />
-          <img src="./assets/svg/instagram.svg" alt="Instagram" />
-          <img src="./assets/svg/youtube.svg" alt="YouTube" />
-        </div>
-      </div>
-    </div>
-
-    <nav>
-      <img class="logo" src="./assets/svg/logo.svg" alt="Logo AllePets" />
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./servicos.html">Serviços</a></li>
-        <li><a href="./tutor.html">Tutor</a></li>
-        <li><a href="./anfitriao.html">Anfitrião</a></li>
-      </ul>
-      <div class="user-actions">
-        <button class="button">Entrar</button>
-        <button>Criar conta</button>
-      </div>
-    </nav>
-  </header>
-  <!-- Fim Header -->
-
-    <a href="./servicos.html" class="voltar">&lt; Voltar para a lista</a>
-
-  <div class="parent">
-    <div class="div1">
-    <section class="perfil">
-      <header class="perfil-header">
-        <div class="perfil-info">
-          <img src="./ASSETS/IMG/persona.png" alt="Foto do cuidador" class="avatar" />
-          <div class="nome-avaliacoes">
-            <h1>Nome do cuidador</h1>
-            <p>1.2km • Itamar</p>
-            <span class="estrelas">★★★★★</span>
-            <small>30 Avaliações</small>
-            <span class="like">❤️</span>
-          </div>
-        </div>
-      </header>
-
-      <div class="galeria">
-        <img src="./ASSETS/IMG/cachorro.png" alt="Foto pet" class="principal" />
-        <div class="miniaturas">
-          <img src="./ASSETS/IMG/dog-01.png" alt="dog" />
-          <img src="./ASSETS/IMG/dog-02.png" alt="dog" />
-          <img src="./ASSETS/IMG/dog-03.png" alt="dog" />
-        </div>
-      </div>
-
-      <section class="sobre">
-        <h2>Sobre mim</h2>
-        <p>
-          Desde criança sempre convivi com animais de diversas espécies. Já
-          acolhi vários animais em situação de rua e cuidei deles até
-          encontrarem um lar definitivo. Tenho paixão incondicional por eles e
-          por isso decidi me tornar bióloga e também dog walker. A partir do
-          momento que estou com seu pet, tenho plena consciência da tamanha
-          responsabilidade que está em minhas mãos. Por isso tenho o total
-          cuidado e treinamento adequado para garantir o conforto, segurança e
-          bem-estar do seu animal.
-        </p>
-      </section>
-
-      <section class="avaliacoes">
-        <h2>Avaliações</h2>
-
-        <article class="avaliacao">
-          <img src="./ASSETS/IMG/persona.png" alt="Foto do cuidador" class="avatar" />
-          <h3>Nome do avaliador</h3>
-          <p class="tipo-servico">Hospedagem</p>
-          <span class="estrelas">★★★★★</span>
-          <small>20/12/2024 a 26/12/2024</small>
-          <p>
-            Descrição fornecida pelo cuidador para informar ao dono/dona do
-            pet sobre como é o trabalho dele...
-          </p>
-        </article>
-
-        <article class="avaliacao">
-          <img src="./ASSETS/IMG/persona.png" alt="Foto do cuidador" class="avatar" />
-          <h3>Nome do avaliador</h3>
-          <p class="tipo-servico">Hospedagem</p>
-          <span class="estrelas">★★★★★</span>
-          <small>20/12/2024 a 26/12/2024</small>
-          <p>
-            Descrição fornecida pelo cuidador para informar ao dono/dona do
-            pet sobre como é o trabalho dele...
-          </p>
-        </article>
-
-        <a href="#" class="ver-todas">Ver todas as avaliações</a>
-      </section>
-
-      <section class="como-e">
-        <h2>Como é a hospedagem</h2>
-        <ul>
-          <li>Mora em casa</li>
-          <li>Dorme junto com os pets na cama</li>
-          <li>Ótima casa para idosos</li>
-          <li>Não tem crianças</li>
-          <li>Não tem crianças menores de 15 anos</li>
-          <li>Não tem cachorro</li>
-          <li>Não tem gato</li>
-        </ul>
-      </section>
-    </section>
-</div>
-    <div class="div2">
-      
-    <aside class="perfil-aside">
-      <!-- Serviços disponíveis -->
-      <section class="servicos-disponiveis">
-        <h3>Serviços disponíveis</h3>
-        <ul>
-          <li>
-            <span>Hospedagem</span><strong>R$85</strong><small>/noite</small>
-          </li>
-          <li><span>Creche</span><strong>R$79</strong><small>/dia</small></li>
-          <li>
-            <span>Pet sitter</span><strong>R$99</strong><small>/visita</small>
-          </li>
-        </ul>
-
-        <hr />
-
-        <button class="btn-reservar">Reservar</button>
-        <a href="#" class="mensagem-link">Enviar Mensagem</a>
-      </section>
-
-      <!-- Preferências -->
-      <section class="preferencias">
-        <h3>Preferências</h3>
-
-        <div class="peso-pets">
-          <div class="peso ativo">
-            <img src="./ASSETS/SVG/dog-5kg.svg" alt="até 5 kg" /><small>até 5 kg</small>
-          </div>
-          <div class="peso ativo">
-            <img src="./ASSETS/SVG/dog-10kg.svg" alt="5-10 kg" /><small>5-10 kg</small>
-          </div>
-          <div class="peso ativo">
-            <img src="./ASSETS/SVG/dog-20kg.svg" alt="10-20 kg" /><small>10-20 kg</small>
-          </div>
-          <div class="peso inativo">
-            <img src="./ASSETS/SVG/dog-40kg.svg" alt="20-40 kg" /><small>20-40 kg</small>
-          </div>
-          <div class="peso inativo">
-            <img src="./ASSETS/SVG/dog.svg" alt="+40 kg" /><small>+40 kg</small>
-          </div>
+          <img
+            src="./ASSETS/SVG/clock.svg"
+            alt="Faça sua reserva 24h por dia"
+          />
+          <p>Faça sua reserva 24h por dia!</p>
         </div>
 
-        <ul class="preferencias-lista">
-          <li>Não recebe fêmeas no cio</li>
-          <li>Aceita pets não castrados</li>
-          <li>Cuida de pets especiais</li>
-          <li>Faz curativos</li>
-          <li>Administra medicamento oral</li>
-        </ul>
-      </section>
-
-      <!-- Disponibilidade -->
-      <section class="disponibilidade">
-        <h3>Disponibilidade</h3>
-
-        <div class="mes">
-          <span id="mesAtual">Junho 2024</span>
-          <div class="controles">
-            <button id="anterior">&lt;</button>
-            <button id="proximo">&gt;</button>
-          </div>
-        </div>
-
-        <div class="calendario">
-          <div class="semana">
-            <div>D</div>
-            <div>S</div>
-            <div>T</div>
-            <div>Q</div>
-            <div>Q</div>
-            <div>S</div>
-            <div>S</div>
-          </div>
-          <div id="dias" class="dias"></div>
-        </div>
-
-        <div class="legenda">
-          <div><span class="dot disponivel"></span> Disponível</div>
-          <div><span class="dot indisponivel"></span> Indisponível</div>
-          <div><span class="dot parte-dia"></span> Parte do dia</div>
-        </div>
-      </section>
-
-      <!-- Localização -->
-      <section class="localizacao">
-        <h2>Localização</h2>
-        <iframe src="https://maps.google.com/maps?q=Zona%2001%20Maring%C3%A1&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameborder="0" class="mapa"></iframe>
-        <p>Zona 01 / Maringá</p>
-      </section>
-    </aside>
-    </div>
-  </div>
-
-  <main class="perfil-container">
-
-  </main>
-
-  <!-- Newslatter -->
-  <section class="cta-section">
-    <div class="cta-container">
-      <div class="cta-text">
-        <h2>Fique por dentro</h2>
-        <p>Seu e-mail protegido como seu Pet!</p>
-      </div>
-      <form class="cta-form" aria-label="Inscreva-se na nossa newsletter">
-        <label for="email" class="visually-hidden">Digite seu e-mail</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required class="cta-input" />
-        <button type="submit" class="cta-button">Inscrever-me!</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img src="./ASSETS/logo/logo-footer.png" alt="Logo AllePets" class="logo-image" />
-        <p>Conexão entre Pets e Hospedagens</p>
-        <p>
-          Somos uma plataforma que tem como objetivo unir tutores e anfitriões
-          de forma segura e prática.
-        </p>
-        <div class="social-media">
+        <div>
           <p>Siga-nos:</p>
-          <a href="#" aria-label="Facebook"><img src="./ASSETS/SVG/facebook-footer.svg" alt="Facebook" /></a>
-          <a href="#" aria-label="Instagram"><img src="./ASSETS/SVG/instagram-footer.svg" alt="Instagram" /></a>
-          <a href="#" aria-label="YouTube"><img src="./ASSETS/SVG/youtube-footer.svg" alt="YouTube" /></a>
+          <div>
+            <img src="./assets/svg/facebook.svg" alt="Facebook" />
+            <img src="./assets/svg/instagram.svg" alt="Instagram" />
+            <img src="./assets/svg/youtube.svg" alt="YouTube" />
+          </div>
         </div>
       </div>
 
-      <div class="footer-links">
-        <h3>Política</h3>
+      <nav>
+        <img class="logo" src="./assets/svg/logo.svg" alt="Logo AllePets" />
         <ul>
-          <li><a href="#">Termos de Adesão</a></li>
-          <li><a href="#">Condições</a></li>
-          <li><a href="#">Missão e Valores</a></li>
-          <li><a href="#">LGPD</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./servicos.html">Serviços</a></li>
+          <li><a href="./tutor.html">Tutor</a></li>
+          <li><a href="./anfitriao.html">Anfitrião</a></li>
         </ul>
-      </div>
+        <div class="user-actions">
+          <button class="button">Entrar</button>
+          <button>Criar conta</button>
+        </div>
+      </nav>
+    </header>
+    <!-- Fim Header -->
 
-      <div class="footer-links">
-        <h3>Links Úteis</h3>
-        <ul>
-          <li><a href="./ajuda.html">Ajuda</a></li>
-          <li><a href="#">Encontre uma hospedagem</a></li>
-          <li>
-            <a href="#">Programa<strong>PetPro</strong></a>
-          </li>
-          <li><a href="#">Torne-se um Parceiro!</a></li>
-        </ul>
-        <button class="cta-button">Cadastre sua hospedagem</button>
+    <div class="title">
+      <a href="./servicos.html" class="voltar">&lt; Voltar para a lista</a>
+      <div class="line"></div>
+    </div>
+
+    
+
+    <div class="parent">
+      <div class="div1">
+        <section class="perfil">
+          <header class="perfil-header">
+            <div class="perfil-info">
+              <img
+                src="./ASSETS/IMG/persona.png"
+                alt="Foto do cuidador"
+                class="avatar"
+              />
+              <div class="nome-avaliacoes">
+                <h1>Nome do cuidador</h1>
+                <p>1.2km • Itamar</p>
+              </div>
+              <div class="estrelas">
+                ★★★★★<br />
+                <small>30 Avaliações</small>
+              </div>
+
+              <div><span class="like">❤️</span></div>
+            </div>
+          </header>
+
+          <div class="galeria">
+            <img
+              src="./ASSETS/IMG/cachorro.png"
+              alt="Foto pet"
+              class="principal"
+            />
+            <div class="miniaturas">
+              <img src="./ASSETS/IMG/dog-01.png" alt="dog" />
+              <img src="./ASSETS/IMG/dog-02.png" alt="dog" />
+              <img src="./ASSETS/IMG/dog-03.png" alt="dog" />
+            </div>
+          </div>
+
+          <section class="sobre">
+            <h2>Sobre mim</h2>
+            <p>
+              Desde criança sempre convivi com animais de diversas espécies. Já
+              acolhi vários animais em situação de rua e cuidei deles até
+              encontrarem um lar definitivo. Tenho paixão incondicional por eles
+              e por isso decidi me tornar bióloga e também dog walker. A partir
+              do momento que estou com seu pet, tenho plena consciência da
+              tamanha responsabilidade que está em minhas mãos. Por isso tenho o
+              total cuidado e treinamento adequado para garantir o conforto,
+              segurança e bem-estar do seu animal.
+            </p>
+          </section>
+
+          <section class="avaliacoes">
+            <h2>Avaliações</h2>
+
+            <article class="avaliacao">
+              <div class="avaliacoesAvaliacao">
+                <img src="./ASSETS/IMG/persona.png"
+                  alt="Foto do cuidador"
+                  class="avatar"/>
+
+                  <div class="avaliacaoNome">
+                    <h3>Nome do avaliador</h3>
+                    <span class="estrelas">★★★★★</span><small>Hospedagem</small>
+                  </div>
+                
+                  <small>20/12/2024 a 26/12/2024</small>
+              </div>
+
+              <p>Descrição fornecida pelo cuidador para informar ao dono/dona do
+                pet sobre como é o trabalho dele...</p>
+
+            </article>
+
+            <article class="avaliacao">
+              <div class="avaliacoesAvaliacao">
+                <img src="./ASSETS/IMG/persona.png"
+                  alt="Foto do cuidador"
+                  class="avatar"/>
+
+                  <div class="avaliacaoNome">
+                    <h3>Nome do avaliador</h3>
+                    <span class="estrelas">★★★★★</span><small>Hospedagem</small>
+                  </div>
+                
+                  <small>20/12/2024 a 26/12/2024</small>
+              </div>
+
+              <p>Descrição fornecida pelo cuidador para informar ao dono/dona do
+                pet sobre como é o trabalho dele...</p>
+
+            </article>
+
+            <article class="avaliacao">
+              <div class="avaliacoesAvaliacao">
+                <img src="./ASSETS/IMG/persona.png"
+                  alt="Foto do cuidador"
+                  class="avatar"/>
+
+                  <div class="avaliacaoNome">
+                    <h3>Nome do avaliador</h3>
+                    <span class="estrelas">★★★★★</span><small>Hospedagem</small>
+                  </div>
+                
+                  <small>20/12/2024 a 26/12/2024</small>
+              </div>
+
+              <p>Descrição fornecida pelo cuidador para informar ao dono/dona do
+                pet sobre como é o trabalho dele...</p>
+
+            </article>
+
+            <a href="#" class="ver-todas">Ver todas as avaliações</a>
+          </section>
+
+          <section class="como-e">
+            <h2>Como é a hospedagem</h2>
+            <ul>
+              <li>Mora em casa</li>
+              <li>Dorme junto com os pets na cama</li>
+              <li>Ótima casa para idosos</li>
+              <li>Não tem crianças</li>
+              <li>Não tem crianças menores de 15 anos</li>
+              <li>Não tem cachorro</li>
+              <li>Não tem gato</li>
+            </ul>
+          </section>
+        </section>
+      </div>
+      <div class="div2">
+        <aside class="perfil-aside">
+          <!-- Serviços disponíveis -->
+          <section class="servicos-disponiveis">
+            <h3>Serviços disponíveis</h3>
+            <ul>
+              <li>
+                <span>Hospedagem</span><strong>R$85</strong
+                ><small>/noite</small>
+              </li>
+              <li>
+                <span>Creche</span><strong>R$79</strong><small>/dia</small>
+              </li>
+              <li>
+                <span>Pet sitter</span><strong>R$99</strong
+                ><small>/visita</small>
+              </li>
+            </ul>
+
+            <hr />
+
+            <button class="btn-reservar">Reservar</button>
+            <a href="#" class="mensagem-link">Enviar Mensagem</a>
+          </section>
+
+          <!-- Preferências -->
+          <section class="preferencias">
+            <h3>Preferências</h3>
+
+            <div class="peso-pets">
+              <div class="peso ativo">
+                <img src="./ASSETS/SVG/dog-5kg.svg" alt="até 5 kg" /><small
+                  >até 5 kg</small
+                >
+              </div>
+              <div class="peso ativo">
+                <img src="./ASSETS/SVG/dog-10kg.svg" alt="5-10 kg" /><small
+                  >5-10 kg</small
+                >
+              </div>
+              <div class="peso ativo">
+                <img src="./ASSETS/SVG/dog-20kg.svg" alt="10-20 kg" /><small
+                  >10-20 kg</small
+                >
+              </div>
+              <div class="peso inativo">
+                <img src="./ASSETS/SVG/dog-40kg.svg" alt="20-40 kg" /><small
+                  >20-40 kg</small
+                >
+              </div>
+              <div class="peso inativo">
+                <img src="./ASSETS/SVG/dog.svg" alt="+40 kg" /><small
+                  >+40 kg</small
+                >
+              </div>
+            </div>
+
+            <ul class="preferencias-lista">
+              <li>Não recebe fêmeas no cio</li>
+              <li>Aceita pets não castrados</li>
+              <li>Cuida de pets especiais</li>
+              <li>Faz curativos</li>
+              <li>Administra medicamento oral</li>
+            </ul>
+          </section>
+
+          <!-- Disponibilidade -->
+          <section class="disponibilidade">
+            <h3>Disponibilidade</h3>
+
+            <div class="mes">
+              <span id="mesAtual">Junho 2024</span>
+              <div class="controles">
+                <button id="anterior">&lt;</button>
+                <button id="proximo">&gt;</button>
+              </div>
+            </div>
+
+            <div class="calendario">
+              <div class="semana">
+                <div>D</div>
+                <div>S</div>
+                <div>T</div>
+                <div>Q</div>
+                <div>Q</div>
+                <div>S</div>
+                <div>S</div>
+              </div>
+              <div id="dias" class="dias"></div>
+            </div>
+
+            <div class="legenda">
+              <div><span class="dot disponivel"></span> Disponível</div>
+              <div><span class="dot indisponivel"></span> Indisponível</div>
+              <div><span class="dot parte-dia"></span> Parte do dia</div>
+            </div>
+          </section>
+
+          <!-- Localização -->
+          <section class="localizacao">
+            <h2>Localização</h2>
+            <iframe
+              src="https://maps.google.com/maps?q=Zona%2001%20Maring%C3%A1&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              class="mapa"
+            ></iframe>
+            <p>Zona 01 / Maringá</p>
+          </section>
+        </aside>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>Copyright © 2025 AllePets - Todos os direitos reservados.</p>
-    </div>
-  </footer>
-</body>
+    <main class="perfil-container"></main>
 
-<script src="./ASSETS/JS/calendar.js">
+    <!-- Newslatter -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-text">
+          <h2>Fique por dentro</h2>
+          <p>Seu e-mail protegido como seu Pet!</p>
+        </div>
+        <form class="cta-form" aria-label="Inscreva-se na nossa newsletter">
+          <label for="email" class="visually-hidden">Digite seu e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+            class="cta-input"
+          />
+          <button type="submit" class="cta-button">Inscrever-me!</button>
+        </form>
+      </div>
+    </section>
 
-  document
-    .querySelector(".cta-form")
-    .addEventListener("submit", function (e) {
-      e.preventDefault();
-      const email = document.querySelector("#email").value;
-      alert(`Obrigado por se inscrever, ${email}!`);
-    });
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="./ASSETS/logo/logo-footer.png"
+            alt="Logo AllePets"
+            class="logo-image"
+          />
+          <p>Conexão entre Pets e Hospedagens</p>
+          <p>
+            Somos uma plataforma que tem como objetivo unir tutores e anfitriões
+            de forma segura e prática.
+          </p>
+          <div class="social-media">
+            <p>Siga-nos:</p>
+            <a href="#" aria-label="Facebook"
+              ><img src="./ASSETS/SVG/facebook-footer.svg" alt="Facebook"
+            /></a>
+            <a href="#" aria-label="Instagram"
+              ><img src="./ASSETS/SVG/instagram-footer.svg" alt="Instagram"
+            /></a>
+            <a href="#" aria-label="YouTube"
+              ><img src="./ASSETS/SVG/youtube-footer.svg" alt="YouTube"
+            /></a>
+          </div>
+        </div>
 
-  function toggleAccordion(element) {
-    element.classList.toggle("active");
-  }
-</script>
+        <div class="footer-links">
+          <h3>Política</h3>
+          <ul>
+            <li><a href="#">Termos de Adesão</a></li>
+            <li><a href="#">Condições</a></li>
+            <li><a href="#">Missão e Valores</a></li>
+            <li><a href="#">LGPD</a></li>
+          </ul>
+        </div>
 
+        <div class="footer-links">
+          <h3>Links Úteis</h3>
+          <ul>
+            <li><a href="./ajuda.html">Ajuda</a></li>
+            <li><a href="#">Encontre uma hospedagem</a></li>
+            <li>
+              <a href="#">Programa<strong>PetPro</strong></a>
+            </li>
+            <li><a href="#">Torne-se um Parceiro!</a></li>
+          </ul>
+          <button class="cta-button">Cadastre sua hospedagem</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2025 AllePets - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./ASSETS/JS/calendar.js">
+
+    document
+      .querySelector(".cta-form")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+        const email = document.querySelector("#email").value;
+        alert(`Obrigado por se inscrever, ${email}!`);
+      });
+
+    function toggleAccordion(element) {
+      element.classList.toggle("active");
+    }
+  </script>
 </html>
