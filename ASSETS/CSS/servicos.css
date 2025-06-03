@@ -281,6 +281,10 @@ nav ul li a {
 .cta-button:hover {
   background-color: #e65475;
 }
+.cta-button a {
+  text-decoration: none;
+  color: #fff;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
